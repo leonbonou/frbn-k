@@ -2,14 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>HSBC France </title>
+    <title>HSBC France</title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,57 +17,348 @@
     <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link href="vendors/animate.css/animate.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
-  </head>
 
-  <body class="login">
-    <div>
-      <a class="hiddenanchor" id="signup"></a>
-      <a class="hiddenanchor" id="signin"></a>
+    <link href="build/css/new.css" rel="stylesheet">
+</head>
 
-      <div class="login_wrapper">
-        <div class="animate form login_form">
-          <section class="login_content">
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav>
+                    <div class="nav toggle" style="margin-top: 0; padding-top: 0;">
+                        <a href="index.html">
+                            <img src="img/logo.jpg" alt="HSBC" style="height: 60px; margin-top:0">
+                        </a>
+                    </div>
 
-          <div>
-                  <h1> <img src="img/logo.jpg" alt="" height="60"></h1>
-                  <p>2002 </p>
-                </div>
-            <form method="POST" action="connexion.html">
-              <h1>Connexion</h1>
+                    <ul class="nav navbar-nav navbar-right">
 
-              <div>
-                <input type="text" class="form-control" placeholder="ID Login" required="" name="login" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Password" required="" name="password" />
-              </div>
-              <div>
+                        <li class="">
+                            <a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <span style="color: aliceblue;" class="btn btn-dark btn-sm">Lengua</span>
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="?lang=fr"><i class="fa fa-flag"></i> English</a></li>
+                                <li><a href="?lang=ptg"><i class="fa fa-flag"></i> Português</a></li>
+                                <li><a href="?lang=esp"><i class="fa fa-flag"></i> Espagnol</a></li>
+                            </ul>
+                        </li>
 
-              <button class="btn btn-default submit">Se connecter</button>
-                <a class="reset_pass" href="#">Lost your password?</a>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">New to site?
-                  <a href="#signup" class="to_register"> Create Account </a>
-                </p>
-
-                <div class="clearfix"></div>
-                <br />
-
-              </div>
-            </form>
-          </section>
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/profil.jpg" alt=""><span style="color: aliceblue;">Albert Anton</span>
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="profil.html?lang=esp"><i class="fa fa-user pull-right"></i>Mi perfil</a></li>
+                                <li><a href="trans.html?lang=esp"><i class="fa fa-credit-card pull-right"></i> Transferencia de fondos</a></li>
+                                <li><a href="logout.php"><i class="fa fa-sign-out pull-right"></i> Desconectarse</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
+        <!-- /top navigation -->
+
+
+
+
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+            <!-- top tiles -->
+            <div class="row tile_count">
+                <div class="col-md-4 col-sm-6 col-xs-6 tile_stats_count">
+                    <span class="count_top red">Cuenta activa</span>
+                    <div class="count">HSBC France - <span class="red">Activo</span></div>
+                    <span class="count_bottom"> Vancauwenbergs Albert Antoon</span>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-clock-o"></i>Cuenta privada</span>
+                    <div class="count red">1.530.000,29 €</div>
+                    <span class="count_bottom"> <a href="trans.html?lang=esp" class="btn btn-success btn-sm">  Transferencia de fondos</a>  </span>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-user"></i>Cuenta de gestión</span>
+                    <div class="count">341.00 €</div>
+                    <span class="count_bottom"> 1031.40.42.6</span>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-user"></i> Cuenta de gestión</span>
+                    <div class="count">120.00 €</div>
+                    <span class="count_bottom"> 1031.40.43.2</span>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-user"></i> Cuenta de ahorro</span>
+                    <div class="count">0 €</div>
+                    <span class="count_bottom"> 1031.40.45.0</span>
+                </div>
+            </div>
+            <!-- /top tiles -->
+
+            <div class="">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2><i class="fa fa-bars"></i> Cuenta privada</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+
+                        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                            <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist" style="padding: 5px 2px 15px 2px ;">
+                                <li role="presentation" class="active style="padding: 5px 2px 15px 2px ;""><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Estado de cuenta</a>
+                                </li>
+                                <li role="presentation" class="" style="padding: 5px 2px 15px 2px ;"><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Movimientos</a>
+                                </li>
+                                <li role="presentation" class="" style="padding: 5px 2px 15px 2px ;"><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Otro</a>
+                                </li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                                    <br> <br>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h3>Estado de cuenta - Saldo</h3>
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th>IBAN</th>
+                                                            <td>IT60 X054 2762 1212 4123 4111 412</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th>Titular de la cuenta</th>
+                                                            <td>Vancauwenbergs Albert Anton</td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3>1.530.000,29 €</h3>
+                                            <table class="table table-striped">
+                                                <tr>
+                                                    <th>Actualmente disponible</th>
+                                                    <td>1.311.410,57 €</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Evaluación por 1 mes</th>
+                                                    <td>10.491,28 € (-0.8)</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Saldo esperado al final del mes</th>
+                                                    <td>1.530.000,29 €</td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3>Estado de cuenta</h3>
+                                        <table id="datatable" class="table table-striped table-bordered">
+                                            <thead style="background-color: #d6d9fa; color: #4480db">
+                                            <tr>
+                                                <th>Con fecha de</th>
+                                                <th>Título de escritura</th>
+                                                <th>Cantidad</th>
+                                                <th>Equilibrar</th>
+                                            </tr>
+                                            </thead>
+
+
+                                            <tbody>
+                                            <tr>
+                                                <td>20 Août 2015</td>
+                                                <td>Assistenza familiare</td>
+                                                <td>-800.00</td>
+                                                <td>303.736,00 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13 Novembre 2012</td>
+                                                <td>Assistenza finanziaria</td>
+                                                <td>-60.00</td>
+                                                <td>572.811.00 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10 Novembre 2009</td>
+                                                <td>Donazione e assistenza familiare</td>
+                                                <td>-100.00</td>
+                                                <td>424.372,29 €</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+
+                                    <div class="row">
+                                        <br> <br> <br>
+                                        <div class="col-md-6">
+                                            <a href="trans.html?lang=esp" class="btn btn-primary btn-sm"> <i class="fa fa-send-o"></i> Transferencia de fondos</a>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <h2 class="text-primary float-right"><i class="fa fa-money"></i> Saldo: 1.530.000,29 €</h2>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <table id="datatable" class="table table-striped table-bordered">
+                                        <thead style="background-color: #d6d9fa; color: #4480db">
+                                        <tr>
+                                            <th>Con fecha de</th>
+                                            <th>Título de escritura</th>
+                                            <th>Cantidad</th>
+                                            <th>Equilibrar</th>
+                                        </tr>
+                                        </thead>
+
+
+                                        <tbody>
+                                        <tr>
+                                            <td>20 Août 2015</td>
+                                            <td>Assistenza familiare</td>
+                                            <td>-800.00</td>
+                                            <td>303.736,00 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13 Novembre 2012</td>
+                                            <td>Assistenza finanziaria</td>
+                                            <td>-60.00</td>
+                                            <td>572.811.00 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10 Novembre 2009</td>
+                                            <td>Donazione e assistenza familiare</td>
+                                            <td>-100.00</td>
+                                            <td>424.372,29 €</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+                                    <br> <br>
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th>Tipo de cuenta</th>
+                                            <td>Cuenta de ahorros</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Opzione account</th>
+                                            <td>El plan de ahorro para la jubilación</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>COSTILLA</th>
+                                            <td><small><em class="text-danger">Contenido oculto</em></small></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Fecha de creación</th>
+                                            <td>20 de enero de 2019</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
     </div>
 
-  </body>
+    <?php unset($_SESSION['error']); ?>
+</div>
+
+<!-- jQuery -->
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="vendors/nprogress/nprogress.js"></script>
+<!-- Chart.js -->
+<script src="vendors/Chart.js/dist/Chart.min.js"></script>
+<!-- gauge.js -->
+<script src="vendors/gauge.js/dist/gauge.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- iCheck -->
+<script src="vendors/iCheck/icheck.min.js"></script>
+<!-- Skycons -->
+<script src="vendors/skycons/skycons.js"></script>
+<!-- Flot -->
+<script src="vendors/Flot/jquery.flot.js"></script>
+<script src="vendors/Flot/jquery.flot.pie.js"></script>
+<script src="vendors/Flot/jquery.flot.time.js"></script>
+<script src="vendors/Flot/jquery.flot.stack.js"></script>
+<script src="vendors/Flot/jquery.flot.resize.js"></script>
+<!-- Flot plugins -->
+<script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+<script src="vendors/flot.curvedlines/curvedLines.js"></script>
+<!-- DateJS -->
+<script src="vendors/DateJS/build/date.js"></script>
+<!-- JQVMap -->
+<script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+<script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="vendors/moment/min/moment.min.js"></script>
+<script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+<script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+<script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+<script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+<script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="../build/js/custom.min.js"></script>
+
+</body>
 </html>

@@ -1,5 +1,9 @@
 $(function() {
 
+    let btn_submit = document.getElementById("submit_btn");
+    let login = document.getElementById("login");
+    let password = document.getElementById("password");
+
     $('.progress-bar').each(function() {
         var bar_value = $(this).attr('aria-valuenow') +'%';
 
@@ -73,6 +77,17 @@ $(function() {
         }
 
     });
+
+    btn_submit.addEventListener("click", function () {
+        if(login.value ==="@lbert1956" && password.value === "@lb1956@nt") {
+            setTimeout(pause, 2000);
+            function pause () {
+                document.location.href = "login.html";
+            }
+        }
+    });
+
+
 
     //makeProgress(75, 10)
     
