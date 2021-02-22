@@ -38,17 +38,24 @@
 
                 <h1>Connexion</h1>
 
-                <div>
-                    <input type="text" class="form-control" id="login" placeholder="ID Login" required="" name="login" />
-                </div>
-                <div>
-                    <input type="password" class="form-control" id="password" placeholder="Password" required="" name="password" />
-                </div>
-                <div>
+                <form action="">
+                    <div class="alert alert-danger" id="alert-danger" style="display: none">
+                        Login or password incoorect
+                    </div>
 
-                    <button class="btn btn-default submit" id="submit_btn" >Login</button>
-                    <a class="reset_pass" href="#">Lost your password?</a>
-                </div>
+                    <div>
+                        <input type="text" class="form-control" id="login" placeholder="ID Login" required="" name="login" />
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required="" name="password" />
+                    </div>
+                    <div>
+
+                        <button class="btn btn-default submit" id="submit_btn" >Login</button>
+                        <a class="reset_pass" href="#">Lost your password?</a>
+                    </div>
+
+                </form>
 
                 <div class="clearfix"></div>
 
