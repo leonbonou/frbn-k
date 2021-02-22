@@ -20,7 +20,7 @@ $(function() {
         } else{
             alert("Invalid");
         }
-        
+
     });
 
 
@@ -65,7 +65,7 @@ $(function() {
                 $("#code_validation").show();
                 setTimeout(pause, 2000); 
                 function pause () {
-                    document.location.href = "response.php"
+                    document.location.href = "response.html"
                 }
             });
         } else {

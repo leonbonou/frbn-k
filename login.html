@@ -1,11 +1,4 @@
-<?php
-session_start();
-if(isset($_SESSION['user'])) {
-  $_SESSION['flash']['danger'] = "Vous n'avez plus accès a cette page.";
-  header('Location: index.php');
-  exit();
-};
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,16 +37,9 @@ if(isset($_SESSION['user'])) {
                   <h1> <img src="img/logo.jpg" alt="" height="60"></h1>
                   <p>2002 </p>
                 </div>
-            <form method="POST" action="connexion.php">
+            <form method="POST" action="connexion.html">
               <h1>Connexion</h1>
 
-              <?php if(isset($_SESSION['flash'])) : ?>
-                <?php foreach($_SESSION['flash'] as $type => $message) :  ?>
-                  <div class="alert alert-<?= $type ?>">
-                    <?= $message; ?>
-                  </div>
-                <?php endforeach; ?>
-              <?php endif; ?>
               <div>
                 <input type="text" class="form-control" placeholder="ID Login" required="" name="login" />
               </div>
@@ -83,6 +69,5 @@ if(isset($_SESSION['user'])) {
       </div>
     </div>
 
-    <?php unset($_SESSION['flash']); ?>
   </body>
 </html>

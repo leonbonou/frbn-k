@@ -1,26 +1,4 @@
-<?php
-session_start();
 
-if(isset($_GET['lang'])){
-  if($_GET['lang'] == 'fr'){
-    $_SESSION['lang'] = 'fr';
-  } elseif($_GET['lang'] == 'ptg'){
-    $_SESSION['lang'] = 'ptg';
-  } elseif($_GET['lang'] == 'esp'){
-    $_SESSION['lang'] = 'esp';
-  } else {
-    $_SESSION['lang'] = 'fr';
-  }
-} else {
-  $_SESSION['lang'] = 'esp';
-}
-
-isset($_SESSION['lang']) ? $lang = $_SESSION['lang'] : $lang = 'fr';
-
-if(!isset($_SESSION['user'])) header('Location: login.php');
-
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,19 +18,19 @@ if(!isset($_SESSION['user'])) header('Location: login.php');
 <body>
 	<div class="page-content" style="background-image: url('transaction/images/wizard-v3.jpg')">
 
-		<?php if($lang == 'fr') : ?>
-				
-				<?php include 'translate/responseF.php'; ?>
+        <div class="wizard-v3-content pb-5">
+            <div class="wizard-form">
+                <div class="wizard-header">
+                    <div class="row mt-3">
+                        <div class="col-6 m-auto">
+                            <img src="images/success.png" alt=""  width="70">
+                            <h3 class="heading">Transferencia exitosa! </h3>
+                        </div>
+                    </div>
+                </div>
 
-				<?php elseif($lang == 'ptg')  : ?>
-
-				<?php include 'translate/responseP.php'; ?>
-
-				<?php else : ?>
-
-				<?php include 'translate/responseE.php'; ?>
-
-        <?php endif; ?>
+            </div>
+        </div>
 
 	</div>
 
